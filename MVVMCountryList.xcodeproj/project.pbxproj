@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		07A64C5B23BD9F3900899D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A64C5A23BD9F3900899D98 /* AppDelegate.swift */; };
 		07A64C5D23BD9F3900899D98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A64C5C23BD9F3900899D98 /* SceneDelegate.swift */; };
-		07A64C5F23BD9F3900899D98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A64C5E23BD9F3900899D98 /* ViewController.swift */; };
 		07A64C6223BD9F3900899D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A64C6023BD9F3900899D98 /* Main.storyboard */; };
 		07A64C6423BD9F3C00899D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A64C6323BD9F3C00899D98 /* Assets.xcassets */; };
 		07A64C6723BD9F3C00899D98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A64C6523BD9F3C00899D98 /* LaunchScreen.storyboard */; };
 		07A64C7223BD9F3D00899D98 /* MVVMCountryListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A64C7123BD9F3D00899D98 /* MVVMCountryListTests.swift */; };
 		07A64C7D23BD9F3D00899D98 /* MVVMCountryListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A64C7C23BD9F3D00899D98 /* MVVMCountryListUITests.swift */; };
+		07A64C9423BD9FA200899D98 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A64C9323BD9FA200899D98 /* CountryModel.swift */; };
+		07A64C9923BD9FCF00899D98 /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A64C9823BD9FCF00899D98 /* CountryListViewController.swift */; };
+		07A64C9E23BD9FE700899D98 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A64C9D23BD9FE700899D98 /* CountryListViewModel.swift */; };
+		07A64CA323BDA34400899D98 /* CountryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A64CA223BDA34400899D98 /* CountryListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		07A64C5723BD9F3900899D98 /* MVVMCountryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMCountryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A64C5A23BD9F3900899D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07A64C5C23BD9F3900899D98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07A64C5E23BD9F3900899D98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07A64C6123BD9F3900899D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07A64C6323BD9F3C00899D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A64C6623BD9F3C00899D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		07A64C7823BD9F3D00899D98 /* MVVMCountryListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMCountryListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A64C7C23BD9F3D00899D98 /* MVVMCountryListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCountryListUITests.swift; sourceTree = "<group>"; };
 		07A64C7E23BD9F3D00899D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A64C9323BD9FA200899D98 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		07A64C9823BD9FCF00899D98 /* CountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
+		07A64C9D23BD9FE700899D98 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		07A64CA223BDA34400899D98 /* CountryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,9 @@
 			children = (
 				07A64C5A23BD9F3900899D98 /* AppDelegate.swift */,
 				07A64C5C23BD9F3900899D98 /* SceneDelegate.swift */,
-				07A64C5E23BD9F3900899D98 /* ViewController.swift */,
+				07A64C8D23BD9F4500899D98 /* ViewController */,
+				07A64C8E23BD9F5500899D98 /* ViewModel */,
+				07A64C9223BD9F7100899D98 /* Model */,
 				07A64C6023BD9F3900899D98 /* Main.storyboard */,
 				07A64C6323BD9F3C00899D98 /* Assets.xcassets */,
 				07A64C6523BD9F3C00899D98 /* LaunchScreen.storyboard */,
@@ -126,6 +134,31 @@
 				07A64C7E23BD9F3D00899D98 /* Info.plist */,
 			);
 			path = MVVMCountryListUITests;
+			sourceTree = "<group>";
+		};
+		07A64C8D23BD9F4500899D98 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				07A64C9823BD9FCF00899D98 /* CountryListViewController.swift */,
+				07A64CA223BDA34400899D98 /* CountryListCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		07A64C8E23BD9F5500899D98 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				07A64C9D23BD9FE700899D98 /* CountryListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		07A64C9223BD9F7100899D98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07A64C9323BD9FA200899D98 /* CountryModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07A64C5F23BD9F3900899D98 /* ViewController.swift in Sources */,
 				07A64C5B23BD9F3900899D98 /* AppDelegate.swift in Sources */,
+				07A64C9923BD9FCF00899D98 /* CountryListViewController.swift in Sources */,
+				07A64CA323BDA34400899D98 /* CountryListCell.swift in Sources */,
+				07A64C9423BD9FA200899D98 /* CountryModel.swift in Sources */,
+				07A64C9E23BD9FE700899D98 /* CountryListViewModel.swift in Sources */,
 				07A64C5D23BD9F3900899D98 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MVVMCountryList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MVVMCountryList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
